@@ -15,7 +15,7 @@
 			@include('inc.message')
 			@yield('content')
 		</div>
-		@if(Request::is('login','password/reset'))
+		@if(Request::is('login','password/reset','register'))
 		@else
 		<div class="col-md-4 col-lg-4">			
 			@include('inc.sidebar')
