@@ -11,9 +11,10 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="{{Request::is('/') ? 'active' : ''}}"><a href=".">Home</a></li>
-            <li class="{{Request::is('about') ? 'active' : ''}}"><a href="about">About</a></li>
-            <li class="{{Request::is('contact') ? 'active' : ''}}"><a href="contact">Contact</a></li>
+            <li class="{{Request::is('/') ? 'active' : ''}}"><a href="{{URL::to('.')}}">Home</a></li>
+            <li class="{{Request::is('about') ? 'active' : ''}}"><a href="{{URL::to('about')}}">About</a></li>
+            <li class="{{Request::is('contact') ? 'active' : ''}}"><a href="{{URL::to('contact')}}">Contact</a></li>
+            <li class="{{Request::is('login') ? 'active' : ''}}"><a href="{{URL::to('login')}}">Login</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

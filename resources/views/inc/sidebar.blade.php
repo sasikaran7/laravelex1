@@ -1,3 +1,4 @@
+
 @section('sidebar')
 <div class="well">
 	<h1>
@@ -5,4 +6,5 @@
 	</h1>
 		This is side bar 
 		@show
-</div>
+</div>	
+

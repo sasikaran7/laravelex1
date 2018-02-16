@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>Laravel Example Site</title>
-	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" type="text/css" href="{{URL::to('css/app.css')}}">
 </head>
 <body>
 @include('inc.navbar')
@@ -15,9 +15,12 @@
 			@include('inc.message')
 			@yield('content')
 		</div>
-		<div class="col-md-4 col-lg-4">
+		@if(Request::is('login','password/reset'))
+		@else
+		<div class="col-md-4 col-lg-4">			
 			@include('inc.sidebar')
 		</div>
+		@endif
 
 	</div>
 
