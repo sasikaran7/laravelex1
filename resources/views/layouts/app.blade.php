@@ -1,7 +1,12 @@
-<html>
+<html lang="{{ app()->getLocale() }}">
 <head>
-	<title>Laravel Example Site</title>
+	<!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
 	<link rel="stylesheet" type="text/css" href="{{URL::to('css/app.css')}}">
+	 <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}"></script>
 </head>
 <body>
 @include('inc.navbar')
