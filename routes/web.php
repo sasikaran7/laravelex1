@@ -24,5 +24,7 @@ Route::get('/contact', function () {
 });
 
 Route::post('/contact/submit', 'MessageController@submit');
+
+Route::get('/messages', 'MessageController@getAllMessages');
    
 
